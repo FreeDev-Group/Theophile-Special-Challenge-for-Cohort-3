@@ -88,7 +88,6 @@ As with most websites and other online platforms, a user’s profile picture is 
 3. **Layout Integrity:** The **header should remain fixed** for constant access to menus, and the **footer should be pinned** to the bottom of the page to maintain a professional layout.
 4. **Account Management:** Clicking the profile area should ideally open a **settings/profile menu** for better user control.
 
-
 ---
 
 ## Is this a problem?
@@ -104,7 +103,6 @@ The lack of navigational cues (active tabs, return buttons) significantly degrad
 
 1. Essential navigation elements like active tab indicators and internal return buttons are completely missing from the UI.
 2. The absence of a profile settings menu limits user control and deviates from standard student application patterns.
-
 
 ---
 
