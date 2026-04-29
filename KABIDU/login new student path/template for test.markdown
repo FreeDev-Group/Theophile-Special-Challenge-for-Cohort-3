@@ -71,7 +71,7 @@ Result: For both accounts, the confirmation email was received within seven seco
 
 While the system is technically sound (excellent error management, duplicate validation, and fast email delivery), there is a major compliance gap regarding the business requirements.
 
-Required Action: The registration interface must be modified to include selection fields for the academic level and programming language. The database logic must also be updated to store this mandatory information when the student profile is created.   
+ 
 
 
 
@@ -97,7 +97,7 @@ The use case is fully validated. The application demonstrates high security stan
 
 
 
-## Validation of Error Handling during Login (Use Case: Login) 
+# Validation of Error Handling during Login (Use Case: Login) 
 
 
 
