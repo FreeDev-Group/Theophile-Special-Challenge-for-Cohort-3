@@ -1,121 +1,125 @@
-# What I am testing
+## usecase login new
 
-## register as a student 
-![alt text](./img/register.png)
-first launch of the website, i selected the type of account i wanted to create.
-In my case, it was student account
+1. Test Objective
+The goal was to verify the system's behavior when an unregistered user attempts to log in or reset a password.
 
---- 
-# Register form
-![alt text](./img/second_method.png)
-After opening the application, I navigate to the "User" tab.
-then, I select the option "Register as Student".
-Finally, I confirm my registration by clicking the "Register" button.
+2. Steps Performed
 
-### What I noticed (IMPORTANT)
+    Login Attempt: Entered the username munguakonkwa kabidu and the email address munguakonkwakabidudu@gmail.com.
 
-What I found important here is the flexibility given to the user during registration.
-The user can register with either a single name or two names, with the option to include a space between them or not.
-The application correctly recognizes this logic and handles the space consistently.
+    Recovery Attempt: Accessed the "Lost your password?" link and submitted the same email address.
 
----
-# Login Details
-![alt text](./img/3part.png)
-After completing the registration process, a message appeared instructing me to check my email inbox.
-I opened my mailbox and found a link allowing me to change my password.
+3. Observations and Error Messages
 
+    During Login: The system triggered the following alert: "Error: The username is not registered on this site".
 
+    During Reset: The system triggered the following alert: "Error: There is no account with that username or email address".
 
-### What should have happened
+4. Test Conclusion
+The Use Case is successfully validated. The system correctly enforces security protocols:
 
-I noticed that the account confirmation was processed automatically.
+    Access is strictly restricted to users verified within the database.
 
-however, according to the intended use case, the confirmation should be handled manually by the administrator
+    Error handling is accurate, providing clear feedback to the user.
 
-This action should be carried out with human intervention, that is, validated manually by the administrator.
+    System integrity is maintained by preventing any unauthorized actions from non-existent accounts.
 
----
-# error message to reset password
-![alt text](./img/resetpassword.jpeg)
-Since the assigned password was unusual and difficult to remember, I decided to change it.
-To do so, i clicked on the link received in my email inbox, which redirected to a form.
-In this form, I was asked to enter my email address.
-
-I opened the password reset page, the Input field was still empty,
-however, an error message was already displayed before any action was taken.
-normally, this error should only appear after clicking The "Get New Password" button when the field is left empty
-
-### What should have happened
-The error message should only appear after the user clicks the “Get New Password” button when the field is left empty.
-It should not be displayed automatically upon opening the page, to avoid confusion and ensure a better user experience
+## Registration Interface: Test and Compliance Analysis Report
 
 
-----
 
-## testing the application's logic.
-![alt text](./img/password_checking.png)
-I did not stop there, as I wanted to test the application's logic.
-I entered an email address similar to the one used during my registration, but not the exact registered address.
-### What should have 
-At the point, the screen flickered, and the message displayed was unclear.
-For a better user experience
+### Problem Description: Use Case Deviation
 
-### What should have happened
-I would have preferred to see a clear message written in red, to immediately catch the user's attention and curiosity.
+When accessing the registration page for a student profile, the interface currently only displays two fields: Username and Email Address.
 
+### Observation: 
 
-### Get New password
-![alt text](./img/login_page.png)
-when i clicked on the "Get New password" button, it took about 10.17 seconds to receive the password reset message.
-The process was very fast and automatic.
-The password was successfully changed, and I was then redirected to the login page.
+The use case is not being followed. According to the functional specifications, the user should be able to select their academic level and their preferred programming language at the time of registration. These elements are missing from the current interface.
+### Details of Performed Tests
 
-## Student Dashboard
-![alt text](./img/student_dashboard.png)
-After setting my new password, I logged in using my email address and the defined password.
-The authentication was successful, and i was redirected to the student account dashboard.
+A. Mandatory Field Validation
 
-## Login with username or email address
+    Empty Field Test: By leaving all fields empty and clicking the "Register" button, the system blocks the action and displays the following error messages:
 
-![alt text](./img/login_with_username.png)
+        "Error: Please enter a username."
 
-according to the application's logic, the user should be able to log in either with an email address or a username.
-i tested this feature to ensure it was working properly.
-in both cases, i was redirected to the same student account dashboard.
-this confirms that logging in with either email or username works correctly.
+        "Error: Please type your email address."
 
+    Partial Entry Test: If the username is provided but the email address is missing, the system also blocks the registration and requires the missing address to be entered.
 
-## Username with more space 
+B. Data Uniqueness Validation
 
-![alt text](./img/username_with_more_space.png)
-While testing the "Username" field further, i noticed that if during registration, the user enters two names separated by a space, the application does not take into account how many times the space key is pressed.
+    Username Duplicate Test: An attempt to register with a username that already exists in the database (but with a different email address) was blocked by the system with the following message:
 
-However, it is mandatory to include the space if it was used during registration.
+        "Error: This username is already registered. Please choose another one."
 
-For example, even if the space key is pressed multiple times (5 or 6 times), the system still interprets it as a single space.
+C. Success Test and Mail Server Performance
 
-## Login with  an incorrect password.
+Two accounts were successfully created to validate the complete workflow:
 
-![alt text](./img/login_with_wrong_password.png)
-I also tested logging in with an incorrect password.
-I noticed that whether using the email address or the username, if the password is not found in the database, the user cannot access the dashboard.
+    User: kabidu sage | Address: abidusaagemg@mail.com
 
-This confirms that the security logic works properly.
-However, I observed that the error messages are not clearly highlighted(for example, no distinctive color or specific field), which may negatively affect the user experience.
-
-## Functionality missing from the user case diagrame
-
-![alt text](./img/profile_missign.png)
-On the user profile, the user should normally have access to their personal information in order to update it. This functionality is missing from the use case diagram, which represents a gap in the intended design.
+    User: sage kabidu | Address: abidusage@gmail.com
 
 
-### All surveys Tab
-![alt text](./img/All_servey_Tab.png)
+![alt text](../login%20new%20student%20path/img/email.png)
 
-In the navigation bar, specifically on the All Surveys tab, once the user clicks on it, the display should be consistent with the other tabs to ensure a uniform experience and provide full freedom of navigation.
 
-### Design
-![alt text](./img/design.png)
+Result: For both accounts, the confirmation email was received within seven seconds, confirming the speed and reliability of the electronic mail delivery service.
 
-The overall design is good, and the colors are well chosen.
-However, one aspect needs improvement in the navbar: when clicking on “My Completed Surveys”, the footer is displayed aligned in the middle of the screen on desktop, which disrupts the layout.
+### Conclusion
+
+While the system is technically sound (excellent error management, duplicate validation, and fast email delivery), there is a major compliance gap regarding the business requirements.
+
+ 
+
+
+
+## Validation of Security Protocols and Password Update Workflow.
+
+1. Analysis of the Reset Interface
+Upon accessing the recovery link, the system suggests a highly secure default password (e.g., E2Q6zDd(Hm%%%%Fd). This feature demonstrates a proactive approach to guiding users toward maximum security.
+
+2. Password Strength Meter Testing
+The system dynamically evaluates input complexity to ensure robust account protection:
+
+    Medium Level: The password Toujours# was identified as having medium security.
+
+    Strong Level: The password Toujours#toucher*123 was validated as "Strong" by the security algorithm.
+
+3. Results and Confirmation
+Once the password was saved, the system confirmed the update with the message: "Your password has been reset. Log in". The redirection link to the dashboard is immediately functional.
+
+![alt text](../login%20new%20student%20path/img/password_reset.png)
+
+4. Test Conclusion
+The use case is fully validated. The application demonstrates high security standards by preventing the use of weak passwords or empty fields. The workflow now allows for a secure login to the dashboard using the new credentials.
+
+
+
+# Validation of Error Handling during Login (Use Case: Login) 
+
+
+
+1. Test Objective
+The goal was to ensure that the system denies access and correctly informs the user when a non-existent account or incorrect credentials are provided.
+
+2. Test Procedure
+
+    Attempted to log in using the unregistered username: sage kabidus.
+
+    Tested various combinations of usernames and passwords that are not stored in the database.
+
+3. Observations and Error Messages
+The system consistently blocked access and triggered the following error message:
+
+    "Error: The username is not registered on this site. If you are unsure of your username, try your email address instead."
+
+![alt text](../login%20new%20student%20path/img/wrong_crdl.png)    
+
+4. Test Conclusion
+The Use Case is fully validated. The security system operates according to the technical specifications:
+
+    Any login attempt involving data not found in the database triggers an appropriate warning.
+
+    Protection against unauthorized access is fully enforced, ensuring that only registered users can access the platform.
