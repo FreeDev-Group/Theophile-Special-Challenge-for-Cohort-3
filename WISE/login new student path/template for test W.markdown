@@ -29,6 +29,11 @@ When attempting to change my password to one of my own preference, the system re
 After adding characters and other symbols to the password, I was finally able to change it and move on to the next step. However, this requirement is personally difficult for me, and perhaps for some students as well, because forgetting even a single symbol would force us to repeatedly reset the password.
 ![](./Images/Strong%20password.png)
 
+### Log in with unknown credantials
+
+While trying to log in with unknown credentials, it didn't work, as in the login diagram.
+![](./Images/Unkwown%20credatials.png)
+
  ### DASHBOARD
 
 After attempting to change the password, this step went smoothly, and in the end, I was able to access the student dashboard.
@@ -37,7 +42,7 @@ After attempting to change the password, this step went smoothly, and in the end
 
 ## What I did (steps)
 
-After receiving the repository from my mentor, I proceeded to the site where I created a student account using my personal details. I entered an email address, and subsequently, a confirmation password was sent to me. At first, I used the default password before changing it to another one. This was unexpected on my part, as I initially believed that each user had the freedom to create a password of their own choice. However, I discovered that this was not possible, so I followed the system’s recommendation and successfully created a new password. Afterwards, I accessed the homepage and scrolled through the displayed menus, which allowed me to take the screenshot that I mentioned earlier in my report regarding the tabs."
+After receiving the repository from my mentor, I proceeded to the site where I created a student account using my personal details. I entered an email address, and subsequently, a confirmation password was sent to me. At first, I used the default password before changing it to another one. This was unexpected on my part, as I initially believed that each user had the freedom to create a password of their own choice. However, I discovered that this was not possible, so I followed the system’s recommendation and successfully created a new password. Afterwards, I accessed the homepage and scrolled through the displayed menus, which allowed me to take the screenshot that I mentioned earlier in my report regarding the tabs.
 
 Here is the clear sequence:
 
@@ -54,25 +59,14 @@ Here is the clear sequence:
 
 ## What I noticed (IMPORTANT)
 
-
-Similar to the 'create account' diagram, it was mentioned that there is a section where one can set the level and change languages. Unfortunately, however, I could not find this in my process. Additionally, it appears that account creation does not wait for administrator validation; I noticed that it is an automatic process once the email confirmation is received the rest is almost entirely automated.
-
----
-
-## What should have happened
-
-According to the diagram, what should happen is that the student must wait for the administrator to approve their account, and they should also be able to choose their language.
+In line with the designer's specifications for this site, the login logic is working very well. There are no complaints so far, as it allows new students to enter their credentials and access the home page directly.
 
 ---
 
-## Is this a problem?
-
-It’s not a problem at all, as it doesn't prevent the student from reaching the site's dashboard.
-
----
 
 ## Action taken
 
 - Documented all navigation and layout issues and captured visual evidence for the development team.
+- I also enjoyed sharing this testing experience with my teammates, something that was new for me.
 
 ---
