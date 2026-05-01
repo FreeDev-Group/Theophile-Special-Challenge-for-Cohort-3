@@ -39,7 +39,6 @@ While trying to log in with unknown credentials, it didn't work, as in the login
 After attempting to change the password, this step went smoothly, and in the end, I was able to access the student dashboard.
  ![](./Images/DASHBOARD.png)
 
-
 ## What I did (steps)
 
 After receiving the repository from my mentor, I proceeded to the site where I created a student account using my personal details. I entered an email address, and subsequently, a confirmation password was sent to me. At first, I used the default password before changing it to another one. This was unexpected on my part, as I initially believed that each user had the freedom to create a password of their own choice. However, I discovered that this was not possible, so I followed the system’s recommendation and successfully created a new password. Afterwards, I accessed the homepage and scrolled through the displayed menus, which allowed me to take the screenshot that I mentioned earlier in my report regarding the tabs.
@@ -62,7 +61,6 @@ Here is the clear sequence:
 In line with the designer's specifications for this site, the login logic is working very well. There are no complaints so far, as it allows new students to enter their credentials and access the home page directly.
 
 ---
-
 
 ## Action taken
 
