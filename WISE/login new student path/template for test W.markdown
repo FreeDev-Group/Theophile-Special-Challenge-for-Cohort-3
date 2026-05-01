@@ -34,11 +34,6 @@ After adding characters and other symbols to the password, I was finally able to
 After attempting to change the password, this step went smoothly, and in the end, I was able to access the student dashboard.
  ![](./Images/DASHBOARD.png)
 
-### Creating an account with an existing email
-
-create account with a valid email and password works fine. But creat account with an existing credantials did not work as expected, because it should not allow the creation of an account with the credentials of an already existing account.
-![](./Images/Existing%20email.png)
-
 
 ## What I did (steps)
 
@@ -56,77 +51,28 @@ Here is the clear sequence:
 
 5. Accessing the homepage.
 
-6. Navigating menus and capturing a screenshot.
 
 ## What I noticed (IMPORTANT)
 
-### Testing the App
 
-During my testing of the application, I discovered that when navigating through the site’s tabs, a student can easily become disoriented because **it is not immediately clear which menu they are in**. In my view, it would be prudent to fix the interface so that the active tab is clearly highlighted, thereby helping students to maintain orientation while navigating.
-Moreover, incorporating a **return button directly into the application interface is essential**, as it provides a more reliable navigation option than depending exclusively on the browser’s back function.
+Similar to the 'create account' diagram, it was mentioned that there is a section where one can set the level and change languages. Unfortunately, however, I could not find this in my process. Additionally, it appears that account creation does not wait for administrator validation; I noticed that it is an automatic process once the email confirmation is received the rest is almost entirely automated.
 
-I think it's also very important to keep the site’s header fixed at the top of the page.
-![](./Images/Testing%20the%20App.png)
-
-### Footer case
-
-The footer is not properly positioned, which may make it somewhat difficult for a student to understand the layout. Therefore, it is crucial to place it correctly in order to maintain the site’s visual appeal and ensure better usability.
-
-Moreover, as this message appears on the screen, it is **impossible to determine from which tab it originates**. Therefore, it is essential to highlight the **active tab** clearly so that students can easily identify their current location within the site.
-![](./Images/Footer%20case.png)
-
-### setting 
-
-As with most websites and other online platforms, a user’s profile picture is very important, as it can serve as an access point to several functions such as profile settings, account preferences, logout, and other user-related options. However, in this case, such a feature does not exist. I believe this is a matter of choice, either to implement it or to leave it aside.
-![](./Images/Setting%20button.png)
 ---
 
 ## What should have happened
 
-1. **Visual Feedback:** The navigation menu should clearly highlight the **active tab** so the student always knows their location within the app.
-2. **Navigation Ease:** A dedicated **"Return" or "Back" button** should be integrated into the UI to provide a seamless navigation experience without relying solely on the browser.
-3. **Layout Integrity:** The **header should remain fixed** for constant access to menus, and the **footer should be pinned** to the bottom of the page to maintain a professional layout.
-4. **Account Management:** Clicking the profile area should ideally open a **settings/profile menu** for better user control.
+According to the diagram, what should happen is that the student must wait for the administrator to approve their account, and they should also be able to choose their language.
 
 ---
 
 ## Is this a problem?
 
-Yes, it is a significant problem because it affects both functionality and user trust. Specifically, the system fails to prevent duplicate accounts, while the lack of navigation feedback and inconsistent layout makes the application difficult for students to use effectively. These issues combined create a confusing experience that deviates from professional standards.
-
-- **Why this is a problem:**
-
-The lack of navigational cues (active tabs, return buttons) significantly degrades the user experience, making the app feel unfinished and difficult for students to trust.
----
-
-## Special note (VERY IMPORTANT)
-
-1. Essential navigation elements like active tab indicators and internal return buttons are completely missing from the UI.
-2. The absence of a profile settings menu limits user control and deviates from standard student application patterns.
-
----
-
-## Evidence
-
-- I add screenshots when needed
-- I make sure the issue is visible in context
-
----
-
-## My thoughts / questions
-
-- **What confused me:** I was initially disoriented when navigating because the active tabs aren't highlighted.
-- **What I don’t understand:** Why the password requirements are so strict for a student app?
-- **Ideas for improvement:**
-  1. Fix the header and footer positions to ensure a consistent and professional UI layout.
-  2. Implement a dedicated "Return" button within the app so students don't have to rely on the browser's back button.
-  3. Add a profile/settings menu triggered by the user's profile picture for better account accessibility.
+It’s not a problem at all, as it doesn't prevent the student from reaching the site's dashboard.
 
 ---
 
 ## Action taken
 
 - Documented all navigation and layout issues and captured visual evidence for the development team.
-- Submitted these suggestions for UX improvements to enhance overall student orientation and usability.
 
 ---
