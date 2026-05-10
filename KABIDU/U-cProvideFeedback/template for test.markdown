@@ -105,4 +105,4 @@ The student proceeds to answer the survey questions while navigating through the
  
 The system records each response as it is entered, allows smooth navigation between questions, and automatically saves the student’s progress in case of disconnection or unexpected exit. This ensures that no data is lost and the student can resume the survey later without interruption. The use case is fully respected, reflecting the intended requirements and providing reliability in the survey process.
 
-![web_site ](./image/Screenshot%20from%202026-05-10%2004-12-38.png)
+![web_site ](./image/list.png)
