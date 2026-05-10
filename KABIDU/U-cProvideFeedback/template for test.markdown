@@ -75,7 +75,7 @@ Once the student selects a survey, the system loads and displays the chosen surv
 
 ![web_site ](./image/response.png)   
 
-# Survey Response Entry and Validation  
+# Feedback 
 
 The student proceeds to answer the survey questions while navigating through the form. The system continuously records each response and verifies that all mandatory fields are completed. If required fields are left empty, the system highlights them and prompts the student to provide an answer. Once validation is successful, the system confirms the submission and may display a success message to acknowledge that the survey has been completed.
 
@@ -93,6 +93,7 @@ The student proceeds to answer the survey questions while navigating through the
 
  Clear prompts guide the student to complete missing information.
 
+![web_site ](./image/feedback.png)  
 ### Confirmation
 
  A success message reassures the student that their responses have been securely submitted
