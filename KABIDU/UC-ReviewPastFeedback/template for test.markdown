@@ -43,10 +43,12 @@ I can say that the use case is fully respected and accurately reflects the reque
 
     All of this perfectly respects the use case.
 
-### What should have happened   
+### What  happened   
 
 1. After some time, I received feedback from my instructor regarding the survey.
 
 2. I returned to the “My Surveys” section, clicked on the same survey, and saw the submission date along with a message
 
 ![Dashboard ](./images/last.png)
+
+In conclusion, we can say that the entire use case for the student is well respected and fully meets the requested need in a professional manner.
