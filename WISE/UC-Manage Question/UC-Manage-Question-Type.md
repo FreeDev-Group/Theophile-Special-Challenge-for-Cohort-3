@@ -40,16 +40,8 @@ I scheduled a question, and it works well. However, the remaining issue is the o
 
 ![](./Images/Schedule%20a%20question.png)
 
-## Other question tested
-
-I have completed comprehensive testing on all question formats across the platform. Every functional element is operating precisely as intended, with no deviations or performance issues detected during the evaluation.
-
-This successful outcome represents a significant milestone, particularly when measured against the initial benchmarks established by the design engineering team. The seamless functionality achieved not only validates the system architecture but also exceeds the baseline technical expectations set for this phase of development.
-
-![](./Images/Questions%20tested.png)
-
 ## Conclusion
 
-The question management workflow is stable and meets the instructor's needs. The system correctly handles adding questions, updating survey content, linking questions to the correct surveys, and enforcing the configured question types.
+This report confirms that the question type management feature delivers reliable and consistent performance. The capabilities to add, update, associate, and define question types align with instructor requirements and safeguard data integrity.
 
-The primary recommendation is to improve the student experience when a survey is changed after submission. Implementing a way for students to revisit or reconcile affected responses would make the workflow fairer and prevent lost access after a survey update.
+The sole recommendation for improvement involves cases where an instructor updates a survey after a student submission. This scenario should be addressed in future iterations to protect the student user experience.
