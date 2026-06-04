@@ -20,5 +20,32 @@
 
 ![Dashboard_form ](./images/form_empty.png)   
 
+# Question Type
+
+                I tested all types of questions and they all worked, which confirms that the question types are respected and accurately reflect the requirement.
+
+## What I noticed
+
+                However, I noticed that once the Instructor starts adding a new question, they must exit the section where the question is defined. For example, they may click on the Dashboard tab and then return to the section for adding a survey question.
+                If this step is not followed, the system interprets the action as editing the previous question.
+
+![Question Type ](./images/multiple_Question.png) 
+
+# Required Question
+
+                When a student skips a question that is not marked as required, the system still validates the form and submits it to the Instructor.
+                This confirms that the form logic is properly respected: only mandatory questions must be completed in order to allow submission.
+
+![Question Type ](./images/Required_Question.png)
 
 
+# student answer
+
+                The questions are properly displayed on the student’s interface, and they can answer them freely. The system’s role is only to perform the necessary validation. However, once the form has been submitted, the student can no longer go back to edit any missing information or provide a clear and important answer they may have remembered afterward.
+
+![Question Type ](./images/student_answer.png)
+
+
+# Conclusion
+
+Overall, the system properly respects the intended use cases: questions are displayed correctly, all question types work as expected, and the form logic is consistent. Some improvements are still needed, particularly in mandatory field validation and handling backward navigation after submission. Nevertheless, the experience remains smooth and intuitive, providing both Instructor and Student with a clear and straightforward workflow.
